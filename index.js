@@ -1,9 +1,10 @@
-import { welcomeScreen } from "./screens/welcome/welcome.js"
+import { setScreenDimensions } from "./components/screen_dimensions/screen_dimensions.js"
 
 window.addEventListener('load', () => {
-  const root = document.getElementById('root')
-  const head = document.getElementsByTagName('head')[0]
+  setScreenDimensions()
 
-  // Load in the various screen
-  welcomeScreen(root, head)
+  // Set the splash image
+  const splashImage = document.getElementById('splash-image')
+  splashImage.src = './index_assets/images/splash_horizontal.jpg'
+
 })

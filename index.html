@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Retro Bomberman 93</title>
     <!-- Linked stylesheets -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/global-styles.css">
+    <link rel="stylesheet" href="./index.css">
     <!-- Linked Javascript -->
     <script src="./index.js" type="module"></script>
   </head>
   <body>
     <noscript>Your browser does not support JavaScript!</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="splash-image-container">
+        <img id="splash-image" />
+      </div>
+      <div id="splash-options-container">
+        <div class="options-container">
+          <img class="create-session-image" src="./index_assets/images/create_session.png" />
+        </div>
+        <div class="options-container">
+          <img class="join-session-image" src="./index_assets/images/join_session.png" />
+        </div>
+        <div class="options-container">
+          <img class="controls-image" src="./index_assets/images/controls.png" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>This is for educational purposes only</p>
+    </footer>
   </body>
 </html>
